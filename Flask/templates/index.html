@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Mathematics</title>
+    <style>
+        #loading
+        {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: white url("https://media.giphy.com/media/r5mO01MtJWgtiNWbC8/giphy.gif") no-repeat center;
+            z-index: 9999;
+        }
+        body
+        { 
+            background-image:url('/static/math.jpg');
+        }
+        .header
+        {
+            padding: 10px;
+            text-align: center;
+            background:green;
+            color: white;
+            font-size: 15px;
+        }
+        .drawing
+        {
+            padding: 10px;
+            padding-bottom: 5px;
+            height: 410px;
+            border: 5px solid green;
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 50px;
+            background:white;
+        }
+        .words
+        {
+            width: 600px;
+            border: 5px solid whitesmoke;
+            height: 390px;
+            margin: 0%;
+            padding: 0%;
+        }
+        .para
+        {
+            text-align: left;
+            font-size: 65%;
+        }
+        .image
+        {
+            margin: 2px;
+            width: 45%;
+            float:right;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body onload="setTimeout(fun,2000)">
+    <div id="loading" ></div>
+    <div class="header">
+        <h1>Smart Mathematics Tutor</h1>
+    </div>
+    <div class="drawing">
+        <div class="words" style="font-size: 2em; float: left;">
+            <b>Give the shape and get the formula!!!!</b>
+            <br><br><br>
+            <div class="para">In this age of information overload, people use a variety of stratergies to make choices about what to buy, how to spend their leisure time, and even where to go. Recommender systems automate some of these stratergies with the goal of providing affordable, personal and high quality recommendations.So with the help of different techniques like collaborative and content based filtering we can build our own recommendation systems.</div><br>
+            <div><b>Test the Tutor</b>&nbsp;&nbsp;
+            <form action="/launch">
+                <button type="submit">Launch</button></a>
+            </form>
+        </div>
+    </div>
+    <div class="image">
+        <img src="https://media.giphy.com/media/tXuunUMfiMvBRx5NI9/giphy.gif" alt="hif">
+    </div>
+    <script type="text/javascript">
+        var preloader=document.getElementById('loading');
+        function fun()
+        {
+            preloader.style.display='none'
+        }
+    </script> 
+</body>
+</html>
